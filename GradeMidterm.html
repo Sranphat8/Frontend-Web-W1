@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>รายงานผลเกรด</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        /*  Header  */
+        .header {
+            background-color: #3b524b;
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+        }
+
+        /*  Card Layout  */
+        .card {
+            background-color: white;
+            width: 40%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+
+        .card h2 {
+            margin-top: 0;
+            color: #000000;
+        
+        }
+
+
+        /*  Student Info  */
+        .student-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .student-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #2a4261;
+
+        }
+
+        .info-text p {
+            margin: 6px 0;
+        }
+
+
+        /*  GPA  */
+        .gpa-total {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        /*  Footer  */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #49514e;
+            margin-top: 40px;
+            color: #ffffff;
+        }
+
+        /*  Back Link  */
+        .back-link {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            color: #2c7be5;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #1a5fc4;
+        }
+
+        .btn-text-link {
+            list-style: none;
+            margin-top: 20px;
+
+            display: flex;
+            gap: 20px;
+        }
+
+
+
+        .btn-text-link a {
+            /* background-color: rgb(133, 133, 100); */
+            background: rgb(245, 244, 239);
+            box-shadow: 0 4px 15px gray;
+            padding: 13px 20px;
+            border-radius: 15px;
+
+            text-decoration: none;
+            
+            font-size: 1.2rem;
+        }
+
+        .btn-text-link a:hover {
+            background: #ccc;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  Header  -->
+    <header class="header">
+        <h1>รายงานผลการเรียน</h1>
+        <p>Student Academic Report</p>
+    </header>
+
+    <!-- Type -->
+    <section class="card">
+        <ul class="btn-text-link">
+            <li><a href="#card1" style="color: rgb(4, 4, 4);">ข้อมูลนักศึกษา</a></li>
+            <li><a href="#card2" style="color: rgb(4, 4, 4);">ผลการเรียน</a></li>
+            <li><a href="#card3" style="color: rgb(4, 4, 4);">ติดต่อ</a></li>
+
+        </ul>
+        </div>
+    </section>
+
+
+    <!--  Student Info  -->
+    <section class="card">
+
+        <h2>ข้อมูลนักศึกษา</h2>
+
+
+        <div class="student-info">
+
+
+            <div class="info-text">
+                <h2>Saranphat Suksaengsi
+
+                </h3>
+                <p><strong>รหัสนักศึกษา:</strong> 654259001</p>
+                <p><strong>ชื่อ – นามสกุล:</strong> นางสาว ศรัญญ์พัฒน์ สุขแสงศรี</p>
+                <p><strong>หมู่เรียน:</strong> 65/45</p>
+                <p><strong>อาจารย์ที่ปรึกษา:</strong> ดร.สุพิชฌาย์ จันทร์เรือง</p>
+                <p><strong>Github:</strong> https://github.com/Sranphat8</p>
+
+
+            </div>
+            <img src="GradeReport_images/me.jpg" alt="รูปนักศึกษา">
+        </div>
+
+
+    </section>
+
+
+
+    </ul>
+
+    <!--  Grade Report  -->
+    <section class="card">
+
+        <ul class="btn-text-link">
+            <li><a href="#card1" style="color: rgb(4, 4, 4);">ปี3 เทอม1 :2.3</a></li>
+            <li><a href="#card2" style="color: rgb(4, 4, 4);">ปี3 เทอม2 :2.23</a></li>
+            <li><a href="#card3" style="color: rgb(4, 4, 4);">ปี4 เทอม1 :2.28</a></li>
+
+    </section>
+
+
+    <section class="card">
+        <h1>เกรดเฉลี่ยสะสม: 2.28</h1>
+
+        </div>
+
+
+    </section>
+
+    <a href="index.html" class="back-link">← Back to HTML Tutorial</a>
+
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <p>© 2026 รายงานผลการเรียนของนักศึกษา</p>
+    </footer>
+
+</body>
+
+</html>
