@@ -29,6 +29,7 @@
                     <a href="">in</a>
                 </div>
             </div>
+        </div>
     </header>
 
     <!-- Navigstion -->
@@ -36,7 +37,7 @@
         <!-- ul>li*6>a -->
         <div class="wrapper">
             <ul class="nav-menu">
-                <li><a href="active">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="">AI Technology</a></li>
                 <li><a href="">Machine Learning</a></li>
                 <li><a href="">Deep Learning</a></li>
@@ -326,16 +327,109 @@
                         <a href="#" class="btn-facebook">กดติดตามใน Facebook</a>
 
                     </div>
-                    <div class="card">Right</div>
-                    <div class="card">Right</div>
-                    <div class="card">Right</div>
-                    <div class="card">Right</div>
-                </div>
 
+
+                    <!-- 📧 รับข่าวสารใหม่ -->
+                    <div class="card subscribe-widget">
+                        <div class="widget-title">📧 รับข่าวสารใหม่</div>
+
+                        <form>
+                            <div class="form-group">
+                                <label>ชื่อของคุณ</label>
+                                <input type="text" placeholder="ชื่อของคุณ">
+                            </div>
+
+                            <div class="form-group">
+                                <label>อีเมล</label>
+                                <input type="email" placeholder="example@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label>สนใจเนื้อหาด้านไหน</label>
+                                <select>
+                                    <option>ทุกหัวข้อ</option>
+                                    <option>AI</option>
+                                    <option>Startup</option>
+                                    <option>Tech</option>
+                                </select>
+                            </div>
+
+                            <button class="btn-subscribe">🚀 สมัครเลย!</button>
+                        </form>
+                    </div>
+
+                    <!-- 💬 ติดต่อด่วน -->
+                    <div class="card contact-widget">
+                        <div class="widget-title">💬 ติดต่อด่วน</div>
+
+                        <form>
+                            <div class="form-group">
+                                <label>ชื่อ</label>
+                                <input type="text" placeholder="ชื่อของคุณ">
+                            </div>
+
+                            <div class="form-group">
+                                <label>เรื่องที่ต้องการติดต่อ</label>
+                                <select>
+                                    <option>เลือกเรื่องที่ติดต่อ</option>
+                                    <option>สอบถามบริการ</option>
+                                    <option>ติดต่อโฆษณา</option>
+                                    <option>อื่น ๆ</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>ข้อความสั้นๆ</label>
+                                <textarea placeholder="อธิบายสั้นๆ..."></textarea>
+                            </div>
+
+                            <button class="btn-contact">📤 ส่งเลย</button>
+                        </form>
+                    </div>
+
+                    <!-- Facebook Like -->
+                    <div class="card facebook-card">
+                        <div class="facebook-title">Saranphat</div>
+
+                        <div class="facebook-box">
+                            <div class="facebook-text">กล่อง Facebook Like (ตัวอย่าง)</div>
+                            <div class="facebook-count">203,779 คนถูกใจ</div>
+                        </div>
+                    </div>
+
+
+                    <!-- Sponsor -->
+                    <div class="card sponsor-card">
+                        <div class="widget-title">Sponsor</div>
+
+                        <div class="sponsor-box">
+                            พื้นที่โฆษณา / วิดีโอ
+                        </div>
+                    </div>
+
+
+                </div>
             </main>
         </div>
     </div>
-    <footer></footer>
+    
+    <div class="back-container">
+    <a class="back-link" href="index.html">
+        ← Back to HTML Tutorial
+    </a>
+</div>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2025 Saranphat - All rights reserved.</p>
+            <p>
+                Designed for educational/demo purposes •
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

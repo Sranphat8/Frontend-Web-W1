@@ -201,10 +201,11 @@ a:hover {
 /* POSTS - Main - Left */
 .card {
   background-color: #ffffff;
-  border-radius: 4px;
-  padding: 15px;
-  box-shadow: 0 2px 8px rgb(101, 101, 101);
-  margin-bottom: 15px;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: none;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
 }
 
 .post-header {
@@ -531,4 +532,218 @@ transform 0.2s ease; */
   background: linear-gradient(45deg, #5a67d8, #6b46c1);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+
+/*  Widget Base */
+
+.subscribe-widget,
+.contact-widget {
+  padding: 30px 25px;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.subscribe-widget {
+  background: linear-gradient(180deg, #1fae8b, #34d399);
+}
+
+.contact-widget {
+  background: linear-gradient(180deg, #6c7ae0, #7b4db2);
+}
+
+.widget-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*  Form  */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.subscribe-widget input,
+.subscribe-widget select,
+.contact-widget input,
+.contact-widget select,
+.contact-widget textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #e7ecef;
+  font-size: 14px;
+}
+
+.contact-widget textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/*  Buttons  */
+
+.btn-subscribe,
+.btn-contact {
+  width: 100%;
+  padding: 16px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-subscribe {
+  background: linear-gradient(90deg, #ff8a8a, #7bdcb5);
+}
+
+.btn-contact {
+  background: linear-gradient(90deg, #ff6a6a, #ff914d);
+}
+
+.btn-subscribe:hover,
+.btn-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+/* Facebook Card */
+
+.facebook-card {
+  background: #ffffff;              
+  padding: 20px;
+  border-radius: 6px;               /* มุมโค้ง */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+}
+
+.facebook-box {
+  width: 100%;              /* เต็มความกว้าง */
+  background: #ebeced;      
+  padding: 22px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.facebook-page-name {
+  font-size: 16px;                  /* เล็กลง */
+  font-weight: 600;                 /* ไม่หนาเกิน */
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.facebook-like-box {
+  background: #f1f3f5;              
+  padding: 22px 15px;
+  border-radius: 8px;               
+  text-align: center;
+}
+
+.facebook-like-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.facebook-like-count {
+  font-size: 15px;
+  font-weight: 500;                 
+  color: #333;
+}
+
+.facebook-title {
+  font-size: 16px;
+  font-weight: 600;   /* ทำให้หนาขึ้น */
+  color: #333;
+  margin-bottom: 14px;
+}
+  
+
+
+
+/*  Sponsor  */
+
+.sponsor-box {
+  width: 100%;             
+  margin: 12px 0;           
+  
+  background: #f0f2f5;
+  height: 260px;
+
+  box-shadow: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #45474a;
+}
+
+.sponsor-card .widget-title {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Footer */
+.site-footer {
+  background: linear-gradient(to right, #1f2933, #111827);
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.footer-content a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+
+.back-container {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+
+  background: #f3f4f6;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.back-link:hover {
+  background: #e5e7eb;
+  transform: translateY(-2px);
 }
