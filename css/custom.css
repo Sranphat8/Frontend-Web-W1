@@ -11,8 +11,8 @@ body {
 }
 
 .wrapper {
-  width: 1000px;
-  max-width: 100%;
+  width: 1100px;
+  max-width: 90%;
   margin: 0 auto;
 
   /* background-color: rgb(207, 124, 15); */
@@ -85,6 +85,7 @@ a:hover {
 
 .main-nav {
   background-color: rgb(42, 40, 40);
+
 }
 
 .nav-menu {
@@ -130,6 +131,7 @@ a:hover {
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 20px;
 }
+
 
 /*
         grid-template-columns: 1fr 1fr;
@@ -197,7 +199,6 @@ a:hover {
   /* background-color: #1e8bc3; */
 }
 
-
 /* POSTS - Main - Left */
 .card {
   background-color: #ffffff;
@@ -254,7 +255,6 @@ a:hover {
 
   border-top: 1px solid rgb(163, 163, 163);
   padding-top: 8px;
-
 }
 
 /* Card Imgae */
@@ -413,7 +413,6 @@ a:hover {
   padding: 40px;
   margin: 0 auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
 }
 
 /* ---------- Layout ของแถว/กลุ่ม ---------- */
@@ -541,7 +540,7 @@ transform 0.2s ease; */
   padding: 30px 25px;
   border-radius: 20px;
   color: #fff;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe-widget {
@@ -615,39 +614,37 @@ transform 0.2s ease; */
 .btn-subscribe:hover,
 .btn-contact:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Facebook Card */
 
 .facebook-card {
-  background: #ffffff;              
+  background: #ffffff;
   padding: 20px;
-  border-radius: 6px;               /* มุมโค้ง */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+  border-radius: 6px; /* มุมโค้ง */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .facebook-box {
-  width: 100%;              /* เต็มความกว้าง */
-  background: #ebeced;      
+  width: 100%; /* เต็มความกว้าง */
+  background: #ebeced;
   padding: 22px;
   border-radius: 10px;
   text-align: center;
 }
 
-
 .facebook-page-name {
-  font-size: 16px;                  /* เล็กลง */
-  font-weight: 600;                 /* ไม่หนาเกิน */
+  font-size: 16px; /* เล็กลง */
+  font-weight: 600; /* ไม่หนาเกิน */
   color: #333;
   margin-bottom: 15px;
 }
 
 .facebook-like-box {
-  background: #f1f3f5;              
+  background: #f1f3f5;
   padding: 22px 15px;
-  border-radius: 8px;               
+  border-radius: 8px;
   text-align: center;
 }
 
@@ -660,26 +657,23 @@ transform 0.2s ease; */
 
 .facebook-like-count {
   font-size: 15px;
-  font-weight: 500;                 
+  font-weight: 500;
   color: #333;
 }
 
 .facebook-title {
   font-size: 16px;
-  font-weight: 600;   /* ทำให้หนาขึ้น */
+  font-weight: 600; /* ทำให้หนาขึ้น */
   color: #333;
   margin-bottom: 14px;
 }
-  
-
-
 
 /*  Sponsor  */
 
 .sponsor-box {
-  width: 100%;             
-  margin: 12px 0;           
-  
+  width: 100%;
+  margin: 12px 0;
+
   background: #f0f2f5;
   height: 260px;
 
@@ -723,7 +717,6 @@ transform 0.2s ease; */
   text-decoration: underline;
 }
 
-
 .back-container {
   text-align: center;
   margin: 40px 0 20px;
@@ -746,4 +739,205 @@ transform 0.2s ease; */
 .back-link:hover {
   background: #e5e7eb;
   transform: translateY(-2px);
+}
+
+/* Gold Price */
+
+:root {
+  --line: rgb(239, 161, 66);
+  --bg01: rgb(220, 220, 176);
+  --bg02: rgb(174, 224, 174);
+  /* inside body */
+  --bg04: rgb(230, 231, 228); 
+  --up:green;
+  --down:red;
+
+}
+
+.wrap-table {
+  border: 2px solid var(--line);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.price-table {
+  width: 100%;
+
+  border: 1px solid var(--line);
+  color: #111827;
+
+  background-color: var(--bg04);
+
+  border-radius: 5px;
+  overflow: hidden;
+
+  border-collapse: collapse;
+}
+
+
+.price-table th ,
+.price-table td {
+  border: 1px solid var(--line);
+  padding: 10px 4px;
+}
+
+.price-table thead th {
+  background-color: var(--bg01);
+}
+
+.month {
+  background-color: var(--bg01);
+}
+
+.num {
+  text-align: right;
+}
+
+.delta {
+  text-align: center;
+}
+
+.price-table tr.total th ,
+.price-table tr.total td {
+  background-color: var(--bg02);
+  font-weight: 600;
+}
+
+.delta.up {
+  color: var(--up);
+}
+
+.delta.down {
+  color: var(--down);
+}
+
+.icon {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.icon.up {
+  border-bottom: 10px solid var(--up);
+  margin-right: 5px;
+}
+.icon.down {
+  border-top: 10px solid var(--down);
+}
+
+/* Responsive */
+
+/* 
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px 
+*/
+
+
+@media (max-width: 922px) {
+  .site-header {
+    background-color: yellowgreen;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    background-color: rgb(205, 156, 50);
+  }
+  
+  .hero-grid ,
+  .content-layout ,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-checkbox-group {
+    flex-direction: column;
+      gap: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding-top: 10px;
+    
+  }
+
+  .nav-menu li a {
+    border-top: 1px solid rgb(122, 122, 122);
+  }
+}
+
+@media (max-width: 576px) {
+  .site-header {
+    background-color: rgb(205, 50, 179);
+  }
+
+  /* กำหนดขนาด / พื้นที่ของปุ่ม */
+  #burger-menu {
+    display: block;
+    height: 25px;
+    width: 30px;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  /* วาด เส้น 3 ขีด ด้วย span + pseudo elements */
+  #burger-menu span,
+  #burger-menu span::before,
+  #burger-menu span::after {
+    background-color: #f3efef;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    transition: all 0.3s ease;
+    content: "";
+  }
+
+  /* จัดตำแหน่ง 3 เส้น (บน กลาง ล่าง) */
+  #burger-menu span {top: 11px;
+  }
+  #burger-menu span::before {top: -8px;}
+  #burger-menu span::after {top: 8px;}
+
+  
+  /* Animation เมื่อกด */
+
+    /* ทำให้เส้น “กลาง” หายไป (โปร่งใส) */
+    #burger-menu.close span {
+        background: transparent;
+    }
+
+    /* เส้นบน rotate(45deg) หมุนเฉียงไปทางขวา */
+    /* top: 0; ทำให้ทั้งสองเส้น “มาซ้อนกันตรงกลาง” ก่อนหมุน */
+    #burger-menu.close span:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    /* เส้นล่าง rotate(-45deg) หมุนเฉียงไปทางซ้าย */
+    #burger-menu.close span:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    /* ซ่อนเมนู */
+    #menu {
+      display: none;
+      flex-direction: column;
+      background: #92adba;
+    }
+
+    /* เปิดเมนูเมื่อ active แสดงเมนูขึ้นมา */
+    #menu.overlay {
+      display: flex;
+    }
+
 }
