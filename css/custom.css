@@ -85,7 +85,6 @@ a:hover {
 
 .main-nav {
   background-color: rgb(42, 40, 40);
-
 }
 
 .nav-menu {
@@ -131,7 +130,6 @@ a:hover {
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 20px;
 }
-
 
 /*
         grid-template-columns: 1fr 1fr;
@@ -200,6 +198,12 @@ a:hover {
 }
 
 /* POSTS - Main - Left */
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   background-color: #ffffff;
   border-radius: 6px;
@@ -748,10 +752,9 @@ transform 0.2s ease; */
   --bg01: rgb(220, 220, 176);
   --bg02: rgb(174, 224, 174);
   /* inside body */
-  --bg04: rgb(230, 231, 228); 
-  --up:green;
-  --down:red;
-
+  --bg04: rgb(230, 231, 228);
+  --up: green;
+  --down: red;
 }
 
 .wrap-table {
@@ -759,7 +762,6 @@ transform 0.2s ease; */
   border-radius: 5px;
   overflow: hidden;
 }
-
 
 .price-table {
   width: 100%;
@@ -775,8 +777,7 @@ transform 0.2s ease; */
   border-collapse: collapse;
 }
 
-
-.price-table th ,
+.price-table th,
 .price-table td {
   border: 1px solid var(--line);
   padding: 10px 4px;
@@ -798,7 +799,7 @@ transform 0.2s ease; */
   text-align: center;
 }
 
-.price-table tr.total th ,
+.price-table tr.total th,
 .price-table tr.total td {
   background-color: var(--bg02);
   font-weight: 600;
@@ -828,6 +829,13 @@ transform 0.2s ease; */
   border-top: 10px solid var(--down);
 }
 
+/* order ลำดับใหม่ */
+.order-widget01 {order: 2}
+.order-widget02 {order: 3}
+.order-widget03 {order: 4}
+.order-widget04 {order: 5}
+.order-widget05 {order: 1}
+
 /* Responsive */
 
 /* 
@@ -839,7 +847,6 @@ Extra large	xl	≥1200px
 Extra extra large	xxl	≥1400px 
 */
 
-
 @media (max-width: 922px) {
   .site-header {
     background-color: yellowgreen;
@@ -850,22 +857,21 @@ Extra extra large	xxl	≥1400px
   .site-header {
     background-color: rgb(205, 156, 50);
   }
-  
-  .hero-grid ,
-  .content-layout ,
+
+  .hero-grid,
+  .content-layout,
   .form-row {
     grid-template-columns: 1fr;
   }
 
   .form-checkbox-group {
     flex-direction: column;
-      gap: 10px;
+    gap: 10px;
   }
 
   .nav-menu {
     flex-direction: column;
     padding-top: 10px;
-    
   }
 
   .nav-menu li a {
@@ -902,42 +908,62 @@ Extra extra large	xxl	≥1400px
   }
 
   /* จัดตำแหน่ง 3 เส้น (บน กลาง ล่าง) */
-  #burger-menu span {top: 11px;
+  #burger-menu span {
+    top: 11px;
   }
-  #burger-menu span::before {top: -8px;}
-  #burger-menu span::after {top: 8px;}
+  #burger-menu span::before {
+    top: -8px;
+  }
+  #burger-menu span::after {
+    top: 8px;
+  }
 
-  
   /* Animation เมื่อกด */
 
-    /* ทำให้เส้น “กลาง” หายไป (โปร่งใส) */
-    #burger-menu.close span {
-        background: transparent;
-    }
+  /* ทำให้เส้น “กลาง” หายไป (โปร่งใส) */
+  #burger-menu.close span {
+    background: transparent;
+  }
 
-    /* เส้นบน rotate(45deg) หมุนเฉียงไปทางขวา */
-    /* top: 0; ทำให้ทั้งสองเส้น “มาซ้อนกันตรงกลาง” ก่อนหมุน */
-    #burger-menu.close span:before {
-        transform: rotate(45deg);
-        top: 0;
-    }
+  /* เส้นบน rotate(45deg) หมุนเฉียงไปทางขวา */
+  /* top: 0; ทำให้ทั้งสองเส้น “มาซ้อนกันตรงกลาง” ก่อนหมุน */
+  #burger-menu.close span:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
 
-    /* เส้นล่าง rotate(-45deg) หมุนเฉียงไปทางซ้าย */
-    #burger-menu.close span:after {
-        transform: rotate(-45deg);
-        top: 0;
-    }
+  /* เส้นล่าง rotate(-45deg) หมุนเฉียงไปทางซ้าย */
+  #burger-menu.close span:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
 
-    /* ซ่อนเมนู */
-    #menu {
-      display: none;
-      flex-direction: column;
-      background: #92adba;
-    }
+  /* ซ่อนเมนู */
+  #menu {
+    display: none;
+    flex-direction: column;
+    background: #92adba;
+  }
 
-    /* เปิดเมนูเมื่อ active แสดงเมนูขึ้นมา */
-    #menu.overlay {
-      display: flex;
-    }
-
+  /* เปิดเมนูเมื่อ active แสดงเมนูขึ้นมา */
+  #menu.overlay {
+    display: flex;
+  }
 }
+
+/* สลับตำแหน่งของ card เนื้อหา */
+/* เรียงลำดับใหม่ด้วย order กรณีที่ต้องการเปลี่ยนลำดับของ widget ใน sidebar หรือโพสต์ใน post-list โดยไม่ต้องแก้ HTML
+ต้องกำหนด display: flex; ให้กับ post-list และ sidebar ก่อน */
+
+
+/* ค่าลบ ตัว - มากสุด จะอยู่บนสุด */
+.card .order-image {order: 2}
+.card .order-table {order: 3}
+.card morder-form {order: 1}
+
+/* ค่าบวก ตัวบวกน้อยสุด จะอยู่บนสุด */
+.order-widget01 {order: 5}
+.order-widget02 {order: 2}
+.order-widget03 {order: 1}
+.order-widget04 {order: 4}
+.order-widget05 {order: 3}
