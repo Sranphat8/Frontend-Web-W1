@@ -574,16 +574,14 @@ transform 0.2s ease; */
   font-weight: 600;
 }
 
-.subscribe-widget input,
-.subscribe-widget select,
-.contact-widget input,
-.contact-widget select,
-.contact-widget textarea {
+.sidebar input,
+.sidebar select,
+.sidebar textarea {
   width: 100%;
-  padding: 14px;
-  border-radius: 14px;
-  border: none;
-  background: #e7ecef;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
   font-size: 14px;
 }
 
@@ -957,9 +955,9 @@ Extra extra large	xxl	≥1400px
 
 
 /* ค่าลบ ตัว - มากสุด จะอยู่บนสุด */
-.card .order-image {order: 2}
+/* .card .order-image {order: 2}
 .card .order-table {order: 3}
-.card morder-form {order: 1}
+.card .order-form {order: 1} */
 
 /* ค่าบวก ตัวบวกน้อยสุด จะอยู่บนสุด */
 .order-widget01 {order: 5}
@@ -967,3 +965,7 @@ Extra extra large	xxl	≥1400px
 .order-widget03 {order: 1}
 .order-widget04 {order: 4}
 .order-widget05 {order: 3}
+
+html {
+  scroll-behavior: smooth;
+}

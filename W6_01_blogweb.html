@@ -24,16 +24,21 @@
                     <p class="header-subtitle">รวมเนื้อหาเกี่ยวกับเทคโนโลยี AI น่าสนใจ</p>
                 </div>
                 <div class="social-icon">
-                    <a href="">f</a>
-                    <a href="">t</a>
-                    <a href="">in</a>
+
+                    <!-- เปิดลิงก์ในแท็บใหม่ -->
+                    <!-- target="_blank" ทำให้ไม่ออกจากเว็บเรา -->
+                    <!-- rel="noopener" ป้องกันเว็บที่เปิดใหม่ไม่ให้ควบคุมหน้าเว็บเรา (security) -->
+                    <!-- rel="noreferrer" ไม่ส่งข้อมูลว่าเรามาจากเว็บไหน -->
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">f</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">t</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">in</a>
                 </div>
             </div>
         </div>
     </header>
 
 
-    <!-- Navigstion -->
+    <!-- Navigation -->
     <nav class="main-nav">
         <!-- ul>li*6>a -->
         <div class="wrapper">
@@ -46,11 +51,14 @@
             <div id="menu">
                 <ul class="nav-menu">
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="">AI Technology</a></li>
-                    <li><a href="">Machine Learning</a></li>
-                    <li><a href="">Deep Learning</a></li>
-                    <li><a href="">AI Tools</a></li>
-                    <li><a href="">AI News</a></li>
+                    <li><a href="https://www.ibm.com/topics/artificial-intelligence">AI Technology</a></li>
+                    <li><a href="https://www.ibm.com/topics/machine-learning">Machine Learning</a></li>
+                    <li><a href="https://www.ibm.com/topics/deep-learning">Deep Learning</a></li>
+                    <li><a href="https://openai.com">AI Tools</a></li>
+                    <li><a href="https://techcrunch.com/tag/artificial-intelligence/">AI News</a></li>
+                    <li><a href="#responsive">Responsive Design</a></li>
+                    <li><a href="#display">CSS Display Property</a></li>
+                    <li><a href="#gold">ราคาทอง</a></li>
                 </ul>
             </div>
 
@@ -70,7 +78,7 @@
                         พร้อมตัวอย่างการใช้งานจริง
                         และเทคนิคขั้นสูงที่จะทำให้เว็บไซต์ของคุณโดดเด่น
                     </p>
-                    <a href="" class="read-more">อ่านเพิ่มเติม</a>
+                    <a href="https://www.babelcoder.com/blog/articles/css-grid-layout" target="_blank" rel="noopener noreferrer" class="read-more">อ่านเพิ่มเติม</a>
 
                 </div>
 
@@ -80,7 +88,7 @@
                         <h3>🎨การออกแบบ UI/UX ที่ใช้งานง่าย</h3>
                         <p>หลักการออกแบบส่วนติดต่อผู้ใช้ที่ดี เริ่มตั้งแต่การเลือกสีที่เหมาะสม การจัดวาง Typography
                             และการสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจ</p>
-                        <a href="" class="read-more">เรียนรู้เพิ่ม</a>
+                        <a href="https://digimusketeers.co.th/blogs/typography-in-graphic-design" target="_blank" rel="noopener noreferrer" class="read-more">เรียนรู้เพิ่ม</a>
                     </div>
                 </div>
 
@@ -89,7 +97,7 @@
                         <h3>⚡การปรับปรุงประสิทธิภาพเว็บไซต์</h3>
                         <p>เทคนิคการทำให้เว็บไซต์โหลดเร็วขึ้น ตั้งแต่การ optimize รูปภาพ การใช้ CDN การ minify code
                             และการวัดผลประสิทธิภาพด้วยเครื่องมือต่างๆ</p>
-                        <a href="" class="read-more">ดูรายละเอียด</a>
+                        <a href="https://digimusketeers.co.th/blogs/seo/9-%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A-page-speed" target="_blank" rel="noopener noreferrer" class="read-more">ดูรายละเอียด</a>
                     </div>
                 </div>
 
@@ -100,7 +108,7 @@
                             Arrow
                             Functions,
                             Async/Await, Destructuring และอื่นๆ</p>
-                        <a href="" class="read-more">เริ่มเรียน</a>
+                        <a href="https://www.glowcode.com/javascript/es6/" target="_blank" rel="noopener noreferrer" class="read-more">เริ่มเรียน</a>
                     </div>
                 </div>
             </div>
@@ -117,11 +125,11 @@
                 <!-- Left Sidebar -->
 
                 <!-- wrap /.post-list -->
-                <main class="post-list">
+                <div class="post-list">
 
                     <!-- Card 01 -->
                     <!-- เปลี่ยน div เป็น section -->
-                    <section class="card order-image">
+                    <section id="responsive" class="card order-image">
                         <p class="card-header-line">CATEGORY ARCHIVES: <strong>RESPONSIVE DESIGN</strong> </p>
 
                         <article>
@@ -161,7 +169,7 @@
 
 
                     <!-- Card 02 -->
-                    <section class="card order-table">
+                    <section id="display" class="card order-table">
                         <p class="card-header-line">CATEGORY ARCHIVES: <strong>CSS DISPLAY PROPERTY</strong> </p>
 
                         <article>
@@ -320,15 +328,15 @@
                             </form>
                         </div>
                     </div>
-                </main>
+                </div>
 
 
                 <!-- Right Sidebar -->
 
                 <!-- wrap /.sidebar -->
                 <aside class="sidebar">
-                    <div class="card">
-                        <div class="widget order-widget01">สวัสดีค่ะ ยินดีต้อนรับ</div>
+                    <div class="card order-widget01">
+                        <div class="facebook-page-name">สวัสดีค่ะ ยินดีต้อนรับ</div>
                         <p>
                             ฉันชื่อ Saranphat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม
                             และเทคโนโลยี AI สำหรับ SME และ Startup
@@ -424,7 +432,7 @@
     </div>
 
     <div class="wrapper" style="margin-top: 40px; ">
-        <section class="card">
+        <section id="gold" class="card">
             <p class="card-header-line">CATEGORY ARCHIVES: <strong>ราคาทอง</strong> </p>
             <header class="post-header">
                 <h2 class="post-title">ตารางสรุปราคาทองรายเดือนต่ำสุด-สูงสุดตั้งแต่ปี 2549</h2>
